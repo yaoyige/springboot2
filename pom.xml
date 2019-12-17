@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yyg.sbt</groupId>
+    <artifactId>springboot</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>common</module>
+        <module>service</module>
+        <module>task</module>
+        <module>supplier</module>
+        <module>controller</module>
+        <module>api</module>
+        <module>inner</module>
+        <module>eureka</module>
+        <module>provider</module>
+        <module>consumer</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.3.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <!--<properties>-->
+        <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+        <!--<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
+        <!--<java.version>1.8</java.version>-->
+        <!--<springboot.version>1.0-SNAPSHOT</springboot.version>-->
+        <!--<mybatis-plus.version>3.0.6</mybatis-plus.version>-->
+        <!--<fastjson.version>1.2.47</fastjson.version>-->
+        <!--<velocity.version>1.7</velocity.version>-->
+        <!--<druid.version>1.1.10</druid.version>-->
+        <!--<swagger.version>2.9.2</swagger.version>-->
+        <!--<swagger-bootstrap-ui.version>1.8.9</swagger-bootstrap-ui.version>-->
+        <!--<fastjackjson.version>2.9.6</fastjackjson.version>-->
+        <!--<commons-lang3.version>3.7</commons-lang3.version>-->
+        <!--<mysql-connector-java.version>8.0.11</mysql-connector-java.version>-->
+        <!--<fastdfs.version>1.26.5</fastdfs.version>-->
+        <!--<jackson-datatype-jsr310.version>2.9.7</jackson-datatype-jsr310.version>-->
+        <!--<skipTests>true</skipTests>-->
+        <!--<easypoi.version>3.3.0</easypoi.version>-->
+        <!--<hikariCP.version>3.1.0</hikariCP.version>-->
+        <!--<httpClient.version>4.5.2</httpClient.version>-->
+    <!--</properties>-->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <cpm.version>0.0.1-SNAPSHOT</cpm.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mybatis-plus.version>3.0.6</mybatis-plus.version>
+        <fastjson.version>1.2.47</fastjson.version>
+        <velocqity.version>1.7</velocqity.version>
+        <druid.version>1.1.10</druid.version>
+        <swagger.version>2.9.2</swagger.version>
+        <swagger-bootstrap-ui.version>1.8.9</swagger-bootstrap-ui.version>
+        <fastjackson.vesion>2.9.6</fastjackson.vesion>
+        <commons-lang3.version>3.7</commons-lang3.version>
+        <mysql-connector-java.version>8.0.11</mysql-connector-java.version>
+        <fastdfs.version>1.26.5</fastdfs.version>
+        <jackson-datatype-jsr310.version>2.9.7</jackson-datatype-jsr310.version>
+        <skipTests>true</skipTests>
+        <easypoi.version>3.3.0</easypoi.version>
+        <hikariCP.version>3.1.0</hikariCP.version>
+        <httpClient.version>4.5.2</httpClient.version>
+        <mail.version>1.4.5</mail.version> <!--邮箱-->
+        <activemq.version>5.14.5</activemq.version>
+        <jms.version>1.0.3</jms.version>
+    </properties>
+
+    <!-- 版本说明：这里统一管理依赖的版本号 -->
+    <dependencyManagement>
+        <dependencies>
+            <!--json数据转换-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson-datatype-jsr310.version}</version>
+            </dependency>
+
+
+
+            <!--<dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-activemq</artifactId>
+            </dependency>-->
+
+        <!--    <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-pool</artifactId>
+                <version>${activemq.version}</version>
+            </dependency>-->
+            <dependency>
+                <groupId>org.messaginghub</groupId>
+                <artifactId>pooled-jms</artifactId>
+                <version>${jms.version}</version>
+            </dependency>
+            <!-- my batis-plus -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>${hikariCP.version}</version>
+            </dependency>
+
+            <!--swagger-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <!--让swagger界面使用doc格式显示-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger-bootstrap-ui.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+            <groupId>com.github.tobato</groupId>
+            <artifactId>fastdfs-client</artifactId>
+            <version>${fastdfs.version}</version>
+        </dependency>
+
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-base</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-web</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-annotation</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpClient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.mail</groupId>
+                <artifactId>mail</artifactId>
+                <version>${mail.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>ea-nexus</id>-->
+            <!--<url>https://eatools.bytedance.net/nexus/content/groups/public/</url>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+    <!--<pluginRepositories>-->
+        <!--<pluginRepository>-->
+            <!--<id>ea-nexus</id>-->
+            <!--<url>https://eatools.bytedance.net/nexus/content/groups/public/</url>-->
+        <!--</pluginRepository>-->
+    <!--</pluginRepositories>-->
+
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>nexus-releases</id>-->
+            <!--<name>Nexus Release Repository</name>-->
+            <!--<url>https://eatools.bytedance.net/nexus/content/repositories/releases/</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>nexus-snapshots</id>-->
+            <!--<name>Nexus Snapshot Repository</name>-->
+            <!--<url>https://eatools.bytedance.net/nexus/content/repositories/snapshots/</url>-->
+        <!--</snapshotRepository>-->
+    <!--</distributionManagement>-->
+
+
+
+</project>

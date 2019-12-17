@@ -1,0 +1,68 @@
+package com.yyg.sbt.service.common.enums;
+
+/**
+ * 应用模块名称<p>用户管理枚举类
+ * 代码描述<p>
+ * Copyright: Copyright (C) 2019 Bytedance，Inc. All rights reserved. <p>
+ * Company: 北京字节跳动科技有限公司 Enterprise Application <p>
+ *
+ * @author huliangshan
+ * @since 2019/1/8 17:51
+ */
+public class SysUserEnum {
+    public enum UseTypeEnum {
+        /**
+         * 运营
+         */
+        INNER("1", "运营"),
+        /**
+         * 供应商
+         */
+        SUPPLIER("2", "供应商");
+
+        String code;
+
+        String value;
+
+        private UseTypeEnum(String code, String value) {
+            this.code = code;
+            this.value = value;
+        }
+
+        public String getCode() {
+            return code;
+        }
+
+        public String getValue() {
+            return value;
+        }
+    }
+
+    public enum StatusEnum {
+        /**
+         * 员工
+         */
+        ENABLE("1", "开启"),
+        /**
+         * 供应商
+         */
+        DISABLE("2", "禁用");
+
+        String code;
+
+        String value;
+
+        private StatusEnum(String code, String value) {
+            this.code = code;
+            this.value = value;
+        }
+
+        public String getCode() {
+            return code;
+        }
+
+        public String getValue() {
+            return value;
+        }
+    }
+}
