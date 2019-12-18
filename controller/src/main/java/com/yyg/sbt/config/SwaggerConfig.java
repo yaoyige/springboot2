@@ -28,7 +28,7 @@ public class SwaggerConfig {
                 .build();
     }
     private ApiInfo apiInfo(){
-        return new ApiInfoBuilder().title("项目名称(收入与开票项目接口文档)")
+        return new ApiInfoBuilder().title("项目名称(springBoot接口文档)")
                 .contact(new Contact("yaoyige","http://www.baidu.com",""))
                 .version("1.0")
                 .description("API 描述")

@@ -8,10 +8,7 @@ import java.util.Map;
 /**
  * 应用模块名称<p>UserRightsInfo用户权限信息
  * 代码描述<p>
- * Copyright: Copyright (C) 2019 Bytedance，Inc. All rights reserved. <p>
- * Company: 北京字节跳动科技有限公司 Enterprise Application <p>
- *
- * @author zhaoyajun
+ * @author yyg
  * @since 2019/3/11 14:06
  */
 public class UserRightsInfo implements Serializable {

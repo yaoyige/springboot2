@@ -16,9 +16,6 @@ import java.io.*;
 /**
  * 应用模块名称<p>fastDFS文件上传工具类
  * 代码描述<p>
- * Copyright: Copyright (C) 2019 Bytedance，Inc. All rights reserved. <p>
- * Company: 北京字节跳动科技有限公司 Enterprise Application <p>
- *
  * @author yyg
  * @since 2019/1/7 13:47
  */
@@ -85,7 +82,7 @@ public class FastDFSUtil {
      * @param inputStream : 输入流
      * @param extension   : 扩展名(eg:jpg)
      * @return : java.lang.String 文件地址
-     * @author : zuoxiaobin
+     * @author : yyg
      * @date : 2019/1/10 18:33
      */
     public static String uploadFile(InputStream inputStream, String extension) throws IOException {
@@ -102,7 +99,7 @@ public class FastDFSUtil {
      * 功能描述: 获取文件服务器url
      *
      * @return : java.lang.String
-     * @author : zuoxiaobin
+     * @author : yyg
      * @date : 2019/1/7 14:19
      */
     public static String getWebServerUrl() {
@@ -114,7 +111,7 @@ public class FastDFSUtil {
      *
      * @param storePath : fastDFS存储路径
      * @return : java.lang.String
-     * @author : zuoxiaobin
+     * @author : yyg
      * @date : 2019/1/7 14:19
      */
     public static String getResAccessUrl(String storePath) {
@@ -129,7 +126,7 @@ public class FastDFSUtil {
      *
      * @param fileUrl : 文件路径
      * @return : void
-     * @author : zuoxiaobin
+     * @author : yyg
      * @date : 2019/1/7 14:00
      */
     public static void deleteFile(String fileUrl) {
@@ -146,7 +143,7 @@ public class FastDFSUtil {
      *
      * @param fileUrl : 文件路径
      * @return : java.io.BufferedInputStream 缓冲流
-     * @author : zuoxiaobin
+     * @author : yyg
      * @date : 2019/1/24 14:21
      */
     public static BufferedInputStream downloadFile(String fileUrl) {
@@ -165,7 +162,7 @@ public class FastDFSUtil {
      * @param fileUrl : 文件路径
      * @param callback : 回调函数
      * @return : T
-     * @author : zuoxiaobin
+     * @author : yyg
      * @date : 2019/1/24 14:22
      */
     public static <T> T downloadFile(String fileUrl, DownloadCallback<T> callback) {

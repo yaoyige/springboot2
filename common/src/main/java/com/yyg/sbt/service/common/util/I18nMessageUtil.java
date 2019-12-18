@@ -19,10 +19,7 @@ import java.util.Optional;
  * <p>
  * 国际化工具类
  * <p>
- * Copyright: Copyright (C) 2019 Bytedance，Inc. All rights reserved. <p>
- * Company: 北京字节跳动科技有限公司 Enterprise Application <p>
- *
- * @author zhangfan
+ * @author yyg
  * @since 2019/1/7 13:47
  */
 @Slf4j

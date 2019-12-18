@@ -1,0 +1,14 @@
+#外部系统路径配置
+#ams:
+#  appId:
+#  appSecret:
+#  sysUrl: http://localhost:8080
+#  getByEid: /api/department/get_by_eid
+
+
+#email:
+#  host: smtp.ym.163.com
+#  port: 25
+#  form: yyg0429@163.com #chao521it@163.com
+#  username: yyg0429@163.com
+#  password: yaoyige0429

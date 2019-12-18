@@ -197,32 +197,4 @@
         </dependencies>
     </dependencyManagement>
 
-    <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>ea-nexus</id>-->
-            <!--<url>https://eatools.bytedance.net/nexus/content/groups/public/</url>-->
-        <!--</repository>-->
-    <!--</repositories>-->
-    <!--<pluginRepositories>-->
-        <!--<pluginRepository>-->
-            <!--<id>ea-nexus</id>-->
-            <!--<url>https://eatools.bytedance.net/nexus/content/groups/public/</url>-->
-        <!--</pluginRepository>-->
-    <!--</pluginRepositories>-->
-
-    <!--<distributionManagement>-->
-        <!--<repository>-->
-            <!--<id>nexus-releases</id>-->
-            <!--<name>Nexus Release Repository</name>-->
-            <!--<url>https://eatools.bytedance.net/nexus/content/repositories/releases/</url>-->
-        <!--</repository>-->
-        <!--<snapshotRepository>-->
-            <!--<id>nexus-snapshots</id>-->
-            <!--<name>Nexus Snapshot Repository</name>-->
-            <!--<url>https://eatools.bytedance.net/nexus/content/repositories/snapshots/</url>-->
-        <!--</snapshotRepository>-->
-    <!--</distributionManagement>-->
-
-
-
 </project>

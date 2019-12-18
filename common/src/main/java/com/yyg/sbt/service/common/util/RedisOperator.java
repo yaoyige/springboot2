@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 
 /**
- * @author leechenxiang
+ * @author yyg
  * @version V1.0
  * @Title: RedisOperator.java
  * @Package com.itzixi.web.component

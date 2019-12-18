@@ -34,7 +34,7 @@ public class SendQQMailUtil {
         // 设置邮件标题
         message.setSubject("6月工资条");
         // 设置邮件内容
-        message.setText("魏红达向您转账1亿元");
+        message.setText("yyg向您转账1亿元");
         // 得到邮差对象
         Transport transport = session.getTransport();
         // 连接自己的邮箱账户

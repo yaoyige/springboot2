@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author zuoxiaobin
+ * @author yyg
  * @description 用户信息
  * @date 2018/11/16 10:20
  */

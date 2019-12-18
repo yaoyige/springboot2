@@ -10,10 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 应用模块名称<p>
  * 代码描述<p>
- * Copyright: Copyright (C) 2019 Bytedance，Inc. All rights reserved. <p>
- * Company: 北京字节跳动科技有限公司 Enterprise Application <p>
- *
- * @author gujia
+ * @author yyg
  * @since 2019/1/7 下午8:54
  */
 public class IDGeneratorUtil {

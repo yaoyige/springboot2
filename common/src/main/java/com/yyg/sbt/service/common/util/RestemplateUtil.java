@@ -32,7 +32,7 @@ public class RestemplateUtil {
     @Value(value = "${ams.getByEid}")
     private String getByEid;
 
-    private static final String EMAILSUFFIX = "@bytedance.com";
+    private static final String EMAILSUFFIX = "@163.com";
 
     private static final String CODE = "code";
 

@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * swagger配置
  *
- * @author 大兵
+ * @author yyg
  * @date 2019/1/2915:06
  **/
 @Configuration
@@ -32,7 +32,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
                 .select()
                 //为当前包路径
-                .apis(RequestHandlerSelectors.basePackage("com.bytedance.ea.cam.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.yyg.sbt.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -41,9 +41,9 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 //页面标题
-                .title("成本分摊项目系统接口文档")
+                .title("springBoot项目系统接口文档")
                 //创建人
-                .contact(new Contact("gujia", "http://www.baidu.com", ""))
+                .contact(new Contact("yyg", "http://www.baidu.com", ""))
                 //版本号
                 .version("1.0")
                 //描述

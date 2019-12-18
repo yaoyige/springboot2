@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.List;
 
 /**
- * @author leechenxiang
+ * @author yyg
  * @version V1.0
  * @Title: LeeJSONResult.java
  * @Description: 自定义响应数据结构
@@ -165,7 +165,7 @@ public class JSONResult {
      * @param json
      * @return
      * @Description: 没有object对象的转化
-     * @author leechenxiang
+     * @author yyg
      * @date 2016年4月22日 下午8:35:21
      */
     public static JSONResult format(String json) {
@@ -183,7 +183,7 @@ public class JSONResult {
      * @return
      * @Description: Object是集合转化
      * 需要转换的对象是一个list
-     * @author leechenxiang
+     * @author yyg
      * @date 2016年4月22日 下午8:35:31
      */
     public static JSONResult formatToList(String jsonData, Class<?> clazz) {
