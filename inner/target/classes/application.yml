@@ -64,13 +64,13 @@ logging:
 #  port: 25
 #  form: yyg0429@163.com #chao521it@163.com
 #  username: yyg0429@163.com
-#  password: yaoyige0429
+#  password:
 email:
   host: smtp.exmail.qq.com #smtp.163.com
   port: 465
   form: yyg0429@163.com #chao521it@163.com
   username: yyg0429@163.com
-  password: xc19961002
+  password:
 
 ams:
   appId:

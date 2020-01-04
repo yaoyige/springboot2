@@ -1,14 +1,12 @@
 package com.yyg.sbt.controller;
 
-import com.yyg.sbt.impl.JmsProducer;
-import org.apache.activemq.command.ActiveMQQueue;
+import com.yyg.sbt.activemq.JmsProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.jms.Destination;
 import javax.jms.Queue;
 
 /**

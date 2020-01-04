@@ -23,7 +23,5 @@ public class UpdateStudentThreadTest extends BaseTest {
         BigDecimal aCount = new BigDecimal("100");
         updateStudentThread.updateStudent(studentId,aCount);
         System.out.println("更新完成");
-
-
     }
 }

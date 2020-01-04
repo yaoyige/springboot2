@@ -3,10 +3,12 @@ com\yyg\sbt\service\common\config\ShowSqlConfig.class
 com\yyg\sbt\service\common\config\SwaggerConfig.class
 com\yyg\sbt\service\common\config\ShowSqlConfig$PerformanceInterceptorPlus.class
 com\yyg\sbt\service\common\config\HttpPoolConfig.class
+com\yyg\sbt\service\common\util\codeutils\CodeGenerator$2.class
 com\yyg\sbt\service\common\util\FastDFSUtil.class
 com\yyg\sbt\service\common\util\UserInfo.class
 com\yyg\sbt\service\common\util\JSONResult.class
 com\yyg\sbt\service\common\util\FastDFSUtil$1.class
+com\yyg\sbt\service\common\util\codeutils\CodeGenerator$1.class
 com\yyg\sbt\service\common\util\RedisOperator.class
 com\yyg\sbt\service\common\enums\SysUserEnum.class
 com\yyg\sbt\service\common\config\ActiveMQConfig.class
@@ -18,6 +20,7 @@ com\yyg\sbt\service\common\config\RedisConfig.class
 com\yyg\sbt\service\common\util\ServerException.class
 com\yyg\sbt\service\common\util\CodeGenerator$2.class
 com\yyg\sbt\service\common\config\MybatisPlusConfig.class
+com\yyg\sbt\service\common\util\codeutils\CodeGenerator.class
 com\yyg\sbt\service\common\enums\SysUserEnum$StatusEnum.class
 com\yyg\sbt\service\common\util\UserRightsInfo.class
 com\yyg\sbt\service\common\util\CodeGenerator.class

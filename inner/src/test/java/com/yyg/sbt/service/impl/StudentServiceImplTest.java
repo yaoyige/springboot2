@@ -2,8 +2,9 @@ package com.yyg.sbt.service.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yyg.sbt.BaseTest;
-import com.yyg.sbt.impl.MailServiceImpl;
+import com.yyg.sbt.mail.MailServiceImpl;
 import com.yyg.sbt.impl.StudentServiceImpl;
+import com.yyg.sbt.main.SudentClass;
 import com.yyg.sbt.store.domain.Student;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,9 @@ public class StudentServiceImplTest extends BaseTest {
      RedisTemplate redisTemplate;
     @Autowired
     MailServiceImpl mailService;
+
+    @Autowired
+    SudentClass studentClass;
 
     @Test
     public void insertStudent() {
@@ -94,5 +98,14 @@ public class StudentServiceImplTest extends BaseTest {
     public void insertStudentId(){
         int i = studentService.insertStudentId();
 
+    }
+
+    @Test
+    public void  studentClass(){
+        String name = "张三";
+        List<Student> students = studentClass.getStudents(name);
+        for( Student student : students){
+            System.out.println("学生姓名是:"+student.getStuName());
+        }
     }
 }

@@ -17,7 +17,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.yyg.*"}) //全局扫描
 @MapperScan(basePackages={"com.yyg.**.store.mapper"})  //mapper扫描
-@EnableRetry //启动重启注解
+@EnableRetry //启动 重试 注解
 @EnableJms //启动activeMq
 @EnableScheduling // spring自带的定时任务功能, 使用注解@Scheduled(cron="0/5 * *  * * ? ") 时,下面的方法不能有参数
 public class SpringbootApiApplication {

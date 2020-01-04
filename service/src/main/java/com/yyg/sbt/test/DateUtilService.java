@@ -1,6 +1,7 @@
 package com.yyg.sbt.test;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateUtils;
 
 import java.text.ParseException;
@@ -53,11 +54,31 @@ public class DateUtilService {
         }
     }
 
+    public static String  getLastRefreshDate(String lastRefreshDate) throws ParseException {
+        if(StringUtils.isBlank(lastRefreshDate)){
+            return lastRefreshDate;
+        }else if((lastRefreshDate.length()==13) && !(lastRefreshDate.contains("-"))) {//时间戳的长度为13位
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            long lt = new Long(lastRefreshDate);
+            Date date = new Date(lt);
+            String res = simpleDateFormat.format(date);
+            return res;
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
         String date = "1575946475000";
-        String date1 ="20190000";
-        System.out.println("获取的时间是什么？？"+getDate(date1));
+       // String date1 ="20190000";
+        System.out.println("获取的时间是什么？？"+getDate(date));
         String string = "43240505";
         System.out.println("输出的字符串是什么:"+ parseDate(string));
+        try {
+            getLastRefreshDate(date);
+            System.out.println("转成时间格式："+ getLastRefreshDate(date));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
 }

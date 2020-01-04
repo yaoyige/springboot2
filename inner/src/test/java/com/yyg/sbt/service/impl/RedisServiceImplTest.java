@@ -1,8 +1,7 @@
 package com.yyg.sbt.service.impl;
 
 import com.yyg.sbt.BaseTest;
-import com.yyg.sbt.impl.RedisServiceImpl;
-import org.apache.poi.util.SystemOutLogger;
+import com.yyg.sbt.redis.RedisServiceImpl;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
